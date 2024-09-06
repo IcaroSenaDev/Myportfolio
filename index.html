@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <title>Portfolio - Icaro Sena Dev</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <i class="fa-solid fa-code" id="nav_logo"> Icaro Sena Dev</i>
+
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="#home">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projeto">Projetos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#sobre">Sobre</a>
+                </li>
+            </ul>
+
+            <button class="btn-default">
+                Baixe o CV
+            </button>
+
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="#home">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projetos">Projetos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#sobre">Sobre</a>
+                </li>
+            </ul>
+
+            <button class="btn-default">
+                Baixe o CV
+            </button>
+        </div>
+    </header>
+    
+    <main id="content">
+        <section id="home">
+            <div class="intro">
+                <h1>Icaro Bonfim de Sena</h1>
+                <hr>
+                <h2>Desenvolvedor Front End</h2>
+            </div>
+        </section>
+
+        <section class="projects-section">
+            <div class="projects-container">
+                <h1>Meus Projetos</h1>
+                <hr class="divider">
+                <div class="project-cards">
+                    <div class="project-card">
+                        <h2><a href="https://github.com/OsManoDaDS/projetosenai.git" target="_blank">GITHUB</a></h2>
+                        <p>Projeto em Java: Sistema de Gestão de Estoque com Interface Gráfica.</p>
+                        <p>(Netbeans e Mysql)</p>
+                    </div>
+                    <div class="project-card">
+                        <h2><a href="https://github.com/IcaroSenaDev/ComercioOnlineDS.git" target="_blank">GITHUB</a></h2>
+                        <p>Projeto Android Studio & Firebase: Comércio Online Java</p>
+                        <p>(Android Studio e Firebase)</p>
+                    </div>
+                    <div class="project-card">
+                        <h2><a href="https://github.com/IcaroSenaDev/projeto-landingpage.git" target="_blank">GITHUB</a></h2>
+                        <p>Projeto Landing Page</p>
+                        <p>(Visual Studio Code, HTML, CSS, Javascript - JQuery)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <div class="container">
+                <h2>Sobre</h2>
+                <hr class="divider">
+                <div class="content">
+                    <div class="column">
+                        <p>Sou um estudante de nível técnico de Desenvolvimento de Sistemas, ingressando na área. Tenho proficiência em lógica de programação, assim como em algumas linguagens sendo elas: JavaScript, Java, C, MySql, HTML, CSS. Já utilizei alguns frameworks que têm relação com algumas dessas linguagens, são eles: NodeJs, React, Visual Studio Code, MySql workbench, NetBeans e Android Studio.</p>
+                        <br>
+                        <CENTER>
+                        <h5>PARA MAIS INFORMAÇÕES BAIXE O CV</h5>
+                        </CENTER>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <img src="src/images/wave.svg" alt="Onda decorativa">
+
+        <div id="footer_items">
+            <div class="footer-section">
+                <h2>Contato</h2>
+                <div class="social-media-buttons">
+                    <a href="https://wa.me/5571992546793" target="_blank" aria-label="WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/icaro-bonfim-de-sena" target="_blank" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/IcaroSenaDev" target="_blank" aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <p class="quote">
+                    “Uma linguagem não faz seu código ser bom, programadores bons fazem seu código ser bom.” <br> - Samuel Custódio
+                </p>
+            </div>
+            <span id="copyright">
+                &copy; 2024 Ícaro Sena. Todos os direitos reservados.
+            </span>
+        </div>
+    </footer>
+    
+    
+    <script src="src/javascript/script.js"></script>
+</body>
+</html>
