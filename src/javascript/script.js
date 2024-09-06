@@ -1,36 +1,35 @@
-$(document).ready(function(){
+$(document).ready(function() {
     $('#mobile_btn').on('click', function() {
-        $('#mobile_menu').toggleClass('active')
-        $('#mobile_btn').find('i').toggleClass('fa-x')
+        $('#mobile_menu').toggleClass('active');
+        $('#mobile_btn').find('i').toggleClass('fa-x');
     });
-/*
-    const sections = $('section');
-    const navItems = $('.nav-item');
 
-    $(window).on('scroll', function(){
-        const header = $('header');
-        const scrollPosition = $(window).scrollTop() - header.outerHeight();
+    const sections = document.querySelectorAll('section');
+    const navItems = document.querySelectorAll('.nav-item');
 
-        let activeSectionIndex = 0;
-        
-        if (scrollPosition <= 0) {
-            header.css('box-shadow', 'none');
-        } else {
-            header.css('box-shadow', '5px 1px 5px rgba(0,0,0,0.1');
-        }
-
-        sections.each(function(i) {
-            const section = $(this);
-            const sectionTop = section.offset().top -  96;
-            const sectionBottom = sectionTop+ section.outerHeight();
-
-            if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
-                activeSectionIndex = i;
-                return false;
+    // Intersection Observer callback
+    function handleIntersection(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const activeIndex = Array.from(sections).indexOf(entry.target);
+                navItems.forEach((navItem, index) => {
+                    navItem.classList.toggle('active', index === activeIndex);
+                });
             }
-        })
-        
-        navItems.removeClass('active');
-        $(navItems[activeSectionIndex]).addClass('active');
-    });*/
+        });
+    }
+
+    // Create an Intersection Observer instance
+    const observer = new IntersectionObserver(handleIntersection, {
+        rootMargin: '0px',
+        threshold: 0.5 // Adjust this value as needed
+    });
+
+    // Observe each section
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+
+    // Initial check to handle when the page loads
+    handleIntersection(sections.map(section => ({ isIntersecting: true, target: section })));
 });
