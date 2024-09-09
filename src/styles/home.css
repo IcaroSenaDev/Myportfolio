@@ -83,3 +83,26 @@ hr:after {
         width: 200px;
     }
 }
+
+.btn-link {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.btn-link:hover {
+    text-decoration: none; 
+}
+
+.btn-default {
+    /* Seu estilo para o botão */
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-default:hover {
+    background-color: #0056b3; 
+}
