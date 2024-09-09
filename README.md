@@ -74,10 +74,3 @@ O site serve como uma vitrine profissional para meus trabalhos de desenvolviment
 
 ---
 
-## 📜 **Licença**
-
-Este projeto é licenciado sob a licença MIT. Consulte o arquivo LICENSE para mais informações.
-
----
-
-Com este README, você terá uma apresentação clara e organizada do seu projeto, pronta para qualquer profissional ou cliente que desejar conhecer suas habilidades.
