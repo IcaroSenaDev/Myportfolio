@@ -4,6 +4,36 @@ $(document).ready(function() {
         $('#mobile_btn').find('i').toggleClass('fa-x');
     });
 
+    // Modal de seleção de idioma do currículo
+    const cvOverlay = document.getElementById('cv_modal_overlay');
+
+    function openCvModal() {
+        cvOverlay.classList.add('active');
+    }
+
+    function closeCvModal() {
+        cvOverlay.classList.remove('active');
+    }
+
+    document.getElementById('cv_trigger_desktop')?.addEventListener('click', openCvModal);
+    document.getElementById('cv_trigger_mobile')?.addEventListener('click', () => {
+        $('#mobile_menu').removeClass('active');
+        openCvModal();
+    });
+    document.getElementById('cv_modal_close')?.addEventListener('click', closeCvModal);
+
+    cvOverlay?.addEventListener('click', function(event) {
+        if (event.target === cvOverlay) {
+            closeCvModal();
+        }
+    });
+
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+            closeCvModal();
+        }
+    });
+
     const sections = document.querySelectorAll('section');
     const navItems = document.querySelectorAll('.nav-item');
 
@@ -31,5 +61,5 @@ $(document).ready(function() {
     });
 
     // Initial check to handle when the page loads
-    handleIntersection(sections.map(section => ({ isIntersecting: true, target: section })));
+    handleIntersection(Array.from(sections).map(section => ({ isIntersecting: true, target: section })));
 });
