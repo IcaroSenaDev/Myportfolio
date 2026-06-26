@@ -1,0 +1,85 @@
+#cv_modal_overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(5, 8, 16, 0.75);
+    backdrop-filter: blur(3px);
+    z-index: 10;
+    align-items: center;
+    justify-content: center;
+}
+
+#cv_modal_overlay.active {
+    display: flex;
+}
+
+#cv_modal {
+    background-color: var(--bg-elevated);
+    border: 1px solid var(--border-subtle);
+    border-radius: 14px;
+    padding: 32px 28px;
+    width: min(380px, 90vw);
+    text-align: center;
+    position: relative;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+}
+
+#cv_modal h3 {
+    color: var(--text-primary);
+    font-size: 1.2em;
+    margin-bottom: 8px;
+}
+
+#cv_modal p {
+    color: var(--text-secondary);
+    font-size: 0.9em;
+    margin-bottom: 24px;
+}
+
+#cv_modal_close {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: color .2s ease;
+}
+
+#cv_modal_close:hover {
+    color: var(--accent);
+}
+
+#cv_modal_options {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+}
+
+.cv-option {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: var(--text-primary);
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-subtle);
+    border-radius: 10px;
+    padding: 18px 12px;
+    transition: border-color .25s ease, background-color .25s ease, transform .2s ease;
+}
+
+.cv-option i {
+    font-size: 1.6em;
+    color: var(--accent);
+}
+
+.cv-option:hover {
+    border-color: var(--accent);
+    background-color: var(--accent-soft);
+    transform: translateY(-2px);
+}

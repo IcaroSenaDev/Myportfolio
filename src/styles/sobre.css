@@ -1,8 +1,17 @@
 .about-section {
-    background-color: #665f5f;
-    color: #fff;
+    background-color: var(--bg-primary);
+    color: var(--text-secondary);
     padding: 50px 0;
     text-align: center;
+}
+
+.about-section h2 {
+    color: var(--text-primary);
+}
+
+.about-section h2 i {
+    color: var(--accent);
+    margin-right: 10px;
 }
 
 .container {
@@ -13,7 +22,7 @@
 .divider {
     width: 50px;
     height: 3px;
-    background-color: #fff;
+    background-color: var(--accent);
     margin: 20px auto 40px;
 }
 
@@ -21,6 +30,11 @@
     text-align: justify;
     max-width: 600px;
     margin: 0 auto;
+}
+
+.cv-callout {
+    text-align: center;
+    color: var(--accent);
 }
 
 p {
