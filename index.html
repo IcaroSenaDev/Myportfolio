@@ -1,185 +1,204 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio de Icaro Bonfim de Sena, estudante de Engenharia de Software focado em desenvolvimento web e automação com IA.">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="src/styles/styles.css">
-    <title>Icaro Sena | Portfólio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portfólio de Icaro Bonfim de Sena, estudante de Engenharia de Software focado em desenvolvimento web e automação com IA.">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="src/styles/styles.css">
+<title>Icaro Sena | Portfólio</title>
 </head>
 <body>
-    <header>
-        <nav id="navbar">
-            <i class="fa-solid fa-code" id="nav_logo" > Icaro Sena Dev</i>
+<header>
+<nav id="navbar">
+<i class="fa-solid fa-code" id="nav_logo" > Icaro Sena Dev</i>
+<ul id="nav_list">
+<li class="nav-item active">
+<a href="#home">Inicio</a>
+</li>
+<li class="nav-item">
+<a href="#projeto">Projetos</a>
+</li>
+<li class="nav-item">
+<a href="#sobre">Sobre</a>
+</li>
+</ul>
+<button class="btn-default" id="cv_trigger_desktop" type="button">
+Baixe o CV
+</button>
+<button id="mobile_btn">
+<i class="fa-solid fa-bars"></i>
+</button>
+</nav>
+<div id="mobile_menu">
+<ul id="mobile_nav_list">
+<li class="nav-item">
+<a href="#home">Inicio</a>
+</li>
+<li class="nav-item">
+<a href="#projeto">Projetos</a>
+</li>
+<li class="nav-item">
+<a href="#sobre">Sobre</a>
+</li>
+</ul>
+<button class="btn-default" id="cv_trigger_mobile" type="button">
+Baixe o CV
+</button>
+</div>
+</header>
+<main id="content">
+<section id="home">
+<div class="intro">
+<h1>Icaro Bonfim de Sena</h1>
+<hr>
+<h2>Software Developer</h2>
+</div>
+</section>
+<section class="projects-section" id="projeto">
+<div class="projects-container">
+<h1><i class="fa-solid fa-diagram-project"></i> Meus Projetos</h1>
+<hr class="divider">
+<div class="project-cards">
 
-            <ul id="nav_list">
-                <li class="nav-item active">
-                    <a href="#home">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#projeto">Projetos</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#sobre">Sobre</a>
-                </li>
-            </ul>
+<div class="project-card">
+<span class="project-status">Em desenvolvimento</span>
+<h2>CFSB</h2>
+<p>Sistema profissional de gestão de estoque de segurança para equipamentos críticos.</p>
+<p>(Python, Flask, banco de dados)</p>
+</div>
 
-            <button class="btn-default" id="cv_trigger_desktop" type="button">
-                Baixe o CV
-            </button>
+<div class="project-card">
+<span class="project-status">Em desenvolvimento</span>
+<h2>Mova IA</h2>
+<p>Agência de automação com IA voltada para pequenos negócios locais (barbearias e salões de beleza).</p>
+<p>(Automação, IA, n8n)</p>
+</div>
 
-            <button id="mobile_btn">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-        </nav>
+<!-- ===== NOVOS PROJETOS ADICIONADOS ===== -->
 
-        <div id="mobile_menu">
-            <ul id="mobile_nav_list">
-                <li class="nav-item">
-                    <a href="#home">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#projeto">Projetos</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#sobre">Sobre</a>
-                </li>
-            </ul>
+<div class="project-card">
+<h2>
+<a href="https://github.com/IcaroSenaDev/Pizzaria" target="_blank" rel="noopener">GITHUB</a>
+·
+<a href="https://icarosenadev.github.io/Pizzaria/" target="_blank" rel="noopener">DEMO</a>
+</h2>
+<p>Bella Massa — Landing page fictícia para pizzaria de bairro, com cardápio, pedido via WhatsApp e identidade visual artesanal.</p>
+<p>(HTML, CSS, JavaScript)</p>
+</div>
 
-            <button class="btn-default" id="cv_trigger_mobile" type="button">
-                Baixe o CV
-            </button>
-        </div>
-    </header>
-    
-    <main id="content">
-        <section id="home">
-            <div class="intro">
-                <h1>Icaro Bonfim de Sena</h1>
-                <hr>
-                <h2>Software Developer</h2>
-            </div>
-        </section>
+<div class="project-card">
+<h2>
+<a href="https://github.com/IcaroSenaDev/studio" target="_blank" rel="noopener">GITHUB</a>
+·
+<a href="https://icarosenadev.github.io/studio/" target="_blank" rel="noopener">DEMO</a>
+</h2>
+<p>Studio Belà — Landing page fictícia para salão de beleza, com serviços, galeria de trabalhos, equipe e agendamento via WhatsApp.</p>
+<p>(HTML, CSS, JavaScript)</p>
+</div>
 
-        <section class="projects-section" id="projeto">
-            <div class="projects-container">
-                <h1><i class="fa-solid fa-diagram-project"></i> Meus Projetos</h1>
-                <hr class="divider">
-                <div class="project-cards">
-                    <div class="project-card">
-                        <span class="project-status">Em desenvolvimento</span>
-                        <h2>CFSB</h2>
-                        <p>Sistema profissional de gestão de estoque de segurança para equipamentos críticos.</p>
-                        <p>(Python, Flask, banco de dados)</p>
-                    </div>
-                    <div class="project-card">
-                        <span class="project-status">Em desenvolvimento</span>
-                        <h2>Mova IA</h2>
-                        <p>Agência de automação com IA voltada para pequenos negócios locais (barbearias e salões de beleza).</p>
-                        <p>(Automação, IA, n8n)</p>
-                    </div>
-                    <div class="project-card">
-                        <h2><a href="https://canva.link/24onia2aqkxjznm" target="_blank" rel="noopener">CANVA</a></h2>
-                        <p>TCC: Central de monitoramento IoT com ESP32 — coleta de sensores via NRF24L01, envio via Wi-Fi para banco em nuvem e dashboard em tempo real.</p>
-                        <p>(ESP32, NRF24L01, Supabase, React.js)</p>
-                    </div>
-                    <div class="project-card">
-                        <h2><a href="https://github.com/OsManoDaDS/projetosenai.git" target="_blank">GITHUB</a></h2>
-                        <p>Projeto em Java: Sistema de Gestão de Estoque com Interface Gráfica.</p>
-                        <p>(Netbeans e Mysql)</p>
-                    </div>
-                    <div class="project-card">
-                        <h2><a href="https://github.com/IcaroSenaDev/ComercioOnlineDS.git" target="_blank">GITHUB</a></h2>
-                        <p>Projeto Android Studio & Firebase: Comércio Online Java</p>
-                        <p>(Android Studio e Firebase)</p>
-                    </div>
-                    <div class="project-card">
-                        <h2><a href="https://github.com/IcaroSenaDev/projeto-landingpage.git" target="_blank">GITHUB</a></h2>
-                        <p>Projeto Landing Page</p>
-                        <p>(Visual Studio Code, HTML, CSS, Javascript - JQuery)</p>
-                    </div>
-                    <div class="project-card">
-                        <h2><a href="https://github.com/OsManoDaDS/bitwave.git" target="_blank">GITHUB</a></h2>
-                        <p>Projeto Bitwave</p>
-                        <p>(Visual Studio Code, React, Prisma, MongoDB, Node.JS)</p>
-                    </div>
-                    <div class="project-card">
-                        <h2><a href="https://github.com/Tomada-Inteligente/dashboard-tomada.git" target="_blank">GITHUB</a></h2>
-                        <p>Projeto Bitwave Tomada Inteligente</p>
-                        <p>(Visual Studio Code, React, Prisma, MongoDB, Node.JS)</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+<!-- ===== FIM DOS NOVOS PROJETOS ===== -->
 
-        <section class="about-section" id="sobre">
-            <div class="container">
-                <h2><i class="fa-solid fa-user-gear"></i> Sobre</h2>
-                <hr class="divider">
-                <div class="content">
-                    <div class="column">
-                        <p>Estudante de Engenharia de Software (UCSAL) e Técnico em Análise e Desenvolvimento de Sistemas (SENAI CIMATEC), atuando como Jovem Aprendiz em TI em Salvador, com experiência prática em suporte técnico e infraestrutura (redes, TCP/IP, DNS, DHCP, VPN, Windows, Linux). Tenho base em lógica de programação e já trabalhei com HTML, CSS, JavaScript, Java, React e Node.js. Atualmente estou em aprofundamento técnico, estudando Python e Flask para o desenvolvimento de um sistema próprio de gestão de estoque, além de empreender em automação com IA e e-commerce.</p>
-                        <br>
-                        <h5 class="cv-callout">PARA MAIS INFORMAÇÕES BAIXE O CV</h5>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+<div class="project-card">
+<h2><a href="https://canva.link/24onia2aqkxjznm" target="_blank" rel="noopener">CANVA</a></h2>
+<p>TCC: Central de monitoramento IoT com ESP32 — coleta de sensores via NRF24L01, envio via Wi-Fi para banco em nuvem e dashboard em tempo real.</p>
+<p>(ESP32, NRF24L01, Supabase, React.js)</p>
+</div>
 
-    <div id="cv_modal_overlay">
-        <div id="cv_modal">
-            <button id="cv_modal_close" type="button" aria-label="Fechar">
-                <i class="fa-solid fa-xmark"></i>
-            </button>
-            <h3>Escolha o idioma do currículo</h3>
-            <p>Selecione a versão que deseja baixar.</p>
-            <div id="cv_modal_options">
-                <a href="src/cv/Currículo-IcaroBonfimdeSena.pdf" download="IcaroSena_curriculo_PT" class="cv-option">
-                    <i class="fa-solid fa-file-pdf"></i>
-                    <span>Português</span>
-                </a>
-                <a href="src/cv/Icaro_Sena_Resume_EN.pdf" download="IcaroSena_resume_EN" class="cv-option">
-                    <i class="fa-solid fa-file-pdf"></i>
-                    <span>English</span>
-                </a>
-            </div>
-        </div>
-    </div>
+<div class="project-card">
+<h2><a href="https://github.com/OsManoDaDS/projetosenai.git" target="_blank">GITHUB</a></h2>
+<p>Projeto em Java: Sistema de Gestão de Estoque com Interface Gráfica.</p>
+<p>(Netbeans e Mysql)</p>
+</div>
 
-    <footer>
-        <img src="src/images/wave.svg" alt="Onda decorativa">
+<div class="project-card">
+<h2><a href="https://github.com/IcaroSenaDev/ComercioOnlineDS.git" target="_blank">GITHUB</a></h2>
+<p>Projeto Android Studio & Firebase: Comércio Online Java</p>
+<p>(Android Studio e Firebase)</p>
+</div>
 
-        <div id="footer_items">
-            <div class="footer-section">
-                <h2>Contato</h2>
-                <div class="social-media-buttons">
-                    <a href="https://wa.me/5571992546793" target="_blank" aria-label="WhatsApp">
-                        <i class="fa-brands fa-whatsapp"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/icaro-bonfim-de-sena" target="_blank" aria-label="LinkedIn">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/IcaroSenaDev" target="_blank" aria-label="GitHub">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                </div>
-            </div>
+<div class="project-card">
+<h2><a href="https://github.com/IcaroSenaDev/projeto-landingpage.git" target="_blank">GITHUB</a></h2>
+<p>Projeto Landing Page</p>
+<p>(Visual Studio Code, HTML, CSS, Javascript - JQuery)</p>
+</div>
 
-            <div class="footer-section">
-                <p class="quote">
-                    “Uma linguagem não faz seu código ser bom, programadores bons fazem seu código ser bom.” <br> - Samuel Custódio
-                </p>
-            </div>
-            <span id="copyright">
-                &copy; 2026 Ícaro Sena. Todos os direitos reservados.
-            </span>
-        </div>
-    </footer>
-    
-    
-    <script src="src/javascript/script.js"></script>
+<div class="project-card">
+<h2><a href="https://github.com/OsManoDaDS/bitwave.git" target="_blank">GITHUB</a></h2>
+<p>Projeto Bitwave</p>
+<p>(Visual Studio Code, React, Prisma, MongoDB, Node.JS)</p>
+</div>
+
+<div class="project-card">
+<h2><a href="https://github.com/Tomada-Inteligente/dashboard-tomada.git" target="_blank">GITHUB</a></h2>
+<p>Projeto Bitwave Tomada Inteligente</p>
+<p>(Visual Studio Code, React, Prisma, MongoDB, Node.JS)</p>
+</div>
+
+</div>
+</div>
+</section>
+<section class="about-section" id="sobre">
+<div class="container">
+<h2><i class="fa-solid fa-user-gear"></i> Sobre</h2>
+<hr class="divider">
+<div class="content">
+<div class="column">
+<p>Estudante de Engenharia de Software (UCSAL) e Técnico em Análise e Desenvolvimento de Sistemas (SENAI CIMATEC), atuando como Jovem Aprendiz em TI em Salvador, com experiência prática em suporte técnico e infraestrutura (redes, TCP/IP, DNS, DHCP, VPN, Windows, Linux). Tenho base em lógica de programação e já trabalhei com HTML, CSS, JavaScript, Java, React e Node.js. Atualmente estou em aprofundamento técnico, estudando Python e Flask para o desenvolvimento de um sistema próprio de gestão de estoque, além de empreender em automação com IA e e-commerce.</p>
+<br>
+<h5 class="cv-callout">PARA MAIS INFORMAÇÕES BAIXE O CV</h5>
+</div>
+</div>
+</div>
+</section>
+</main>
+<div id="cv_modal_overlay">
+<div id="cv_modal">
+<button id="cv_modal_close" type="button" aria-label="Fechar">
+<i class="fa-solid fa-xmark"></i>
+</button>
+<h3>Escolha o idioma do currículo</h3>
+<p>Selecione a versão que deseja baixar.</p>
+<div id="cv_modal_options">
+<a href="src/cv/Currículo-IcaroBonfimdeSena.pdf" download="IcaroSena_curriculo_PT" class="cv-option">
+<i class="fa-solid fa-file-pdf"></i>
+<span>Português</span>
+</a>
+<a href="src/cv/Icaro_Sena_Resume_EN.pdf" download="IcaroSena_resume_EN" class="cv-option">
+<i class="fa-solid fa-file-pdf"></i>
+<span>English</span>
+</a>
+</div>
+</div>
+</div>
+<footer>
+<img src="src/images/wave.svg" alt="Onda decorativa">
+<div id="footer_items">
+<div class="footer-section">
+<h2>Contato</h2>
+<div class="social-media-buttons">
+<a href="https://wa.me/5571992546793" target="_blank" aria-label="WhatsApp">
+<i class="fa-brands fa-whatsapp"></i>
+</a>
+<a href="https://www.linkedin.com/in/icaro-bonfim-de-sena" target="_blank" aria-label="LinkedIn">
+<i class="fa-brands fa-linkedin"></i>
+</a>
+<a href="https://github.com/IcaroSenaDev" target="_blank" aria-label="GitHub">
+<i class="fa-brands fa-github"></i>
+</a>
+</div>
+</div>
+<div class="footer-section">
+<p class="quote">
+"Uma linguagem não faz seu código ser bom, programadores bons fazem seu código ser bom." <br> - Samuel Custódio
+</p>
+</div>
+<span id="copyright">
+&copy; 2026 Ícaro Sena. Todos os direitos reservados.
+</span>
+</div>
+</footer>
+<script src="src/javascript/script.js"></script>
 </body>
 </html>
