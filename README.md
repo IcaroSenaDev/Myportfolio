@@ -1,115 +1,79 @@
 # Icaro Sena — Portfólio
 
-Portfólio pessoal desenvolvido para apresentar minha trajetória, projetos e formas de contato. Construído com HTML, CSS e JavaScript puro, sem frameworks ou build tools. Visual escuro com identidade tech (azul/ciano), pensado para transmitir um perfil profissional voltado a tecnologia.
+Portfólio de Icaro Bonfim de Sena, com identidade em **preto e azul-escuro**, tipografia editorial e uma composição 3D interativa. HTML, CSS e JavaScript nativos; nenhuma dependência de execução ou CDN.
+
+**Endereço do portfólio:** [icarosenadev.github.io/Myportfolio](https://icarosenadev.github.io/Myportfolio)
 
 ## Sobre
 
-Sou estudante de Engenharia de Software (UCSAL) e Técnico em Análise e Desenvolvimento de Sistemas (SENAI CIMATEC), atuando como Jovem Aprendiz em TI em Salvador (BA). Tenho experiência prática em suporte técnico e infraestrutura, base em lógica de programação e já trabalhei com HTML, CSS, JavaScript, Java, React e Node.js. Atualmente estou aprofundando conhecimento em Python e Flask para o desenvolvimento de projetos próprios, além de empreender em automação com IA e e-commerce.
+Estudante de Engenharia de Software na UCSAL (2025–atual) e Técnico em Análise e Desenvolvimento de Sistemas pelo SENAI CIMATEC (2023–2025, concluído). Jovem Aprendiz na área de TI da Global Manutenções e Construções desde julho de 2025, em Salvador. Atua em suporte técnico, hardware, software, inventário de ativos e redes, e desenvolve projetos próprios full stack com Python, Flask, JavaScript e React. Também explora automação com IA e e-commerce.
 
-**Acesse o portfólio:** [icarosenadev.github.io/Myportfolio](https://icarosenadev.github.io/Myportfolio)
+O currículo `src/cv/Curriculo_Icaro_Bonfim_de_Sena.pdf` é a fonte da atualização profissional. O site inclui experiência, formação, habilidades, cursos complementares e formas de contato. A versão inglesa anterior é mantida e identificada como anterior, sem tradução ou atualização presumida.
 
----
+## Experiência visual e funcionalidades
 
-## Tecnologias utilizadas
+- Preto, azul-marinho e azuis de destaque, com variáveis de tema centralizadas.
+- Escultura geométrica 3D com faces, camadas e órbitas em CSS; interação com o ponteiro sem biblioteca gráfica.
+- Pausa manual, respeito a `prefers-reduced-motion`, pausa fora da tela e quando a aba está oculta.
+- Dez projetos renderizados em HTML, com filtros por categoria e contagem anunciada para leitores de tela.
+- Menu responsivo e indicação da seção ativa sincronizada entre desktop e celular.
+- Currículos em diálogo acessível: foco contido, fechamento por Escape/fundo e retorno do foco.
+- Currículo atualizado, versões anteriores e compatibilidade com o antigo endereço quebrado do PDF em português.
+- Conteúdo e downloads disponíveis mesmo sem JavaScript.
+- Links externos com `noopener noreferrer`, link para pular ao conteúdo e foco visível.
 
-| Tecnologia | Uso no projeto |
-|---|---|
-| HTML5 | Estrutura semântica das páginas |
-| CSS3 | Estilização, variáveis de tema, responsividade e media queries |
-| JavaScript + jQuery | Menu mobile, scroll spy e modal de seleção de idioma do CV |
-| Font Awesome | Ícones de navegação, redes sociais e seções |
+As imagens de capa dos quatro primeiros projetos são **composições conceituais em CSS**, identificadas no site; não são capturas dos produtos. A onda SVG original continua no repositório, embora não seja utilizada pelo novo layout.
 
----
+## Projetos preservados
 
-## Funcionalidades
+1. **CFSB** — Gestão de estoque de segurança para equipamentos críticos, em desenvolvimento. O currículo descreve gestão de fornecedores, notas fiscais, manutenções e solicitações; Flask/SQLAlchemy, JWT, níveis de acesso, auditoria, mais de 180 testes e migração validada SQLite → PostgreSQL com Alembic.
+2. **Mova IA** — Agência de automação com IA para pequenos negócios locais (barbearias e salões), em desenvolvimento; automação, IA e n8n.
+3. **Bella Massa** — Landing page fictícia de pizzaria, com cardápio, WhatsApp e identidade artesanal. [GitHub](https://github.com/IcaroSenaDev/Pizzaria) · [Demo](https://icarosenadev.github.io/Pizzaria/).
+4. **Studio Belà** — Landing page fictícia de salão, com serviços, galeria, equipe e agendamento por WhatsApp. [GitHub](https://github.com/IcaroSenaDev/studio) · [Demo](https://icarosenadev.github.io/studio/).
+5. **TCC — Central de Monitoramento IoT** — ESP32, NRF24L01, Wi-Fi, Supabase e dashboard React em tempo real. [Apresentação](https://canva.link/24onia2aqkxjznm) · [Publicação original](https://lnkd.in/dmbFNsdH).
+6. **Gestão de Estoque Java** — Interface gráfica, NetBeans e MySQL. [GitHub](https://github.com/OsManoDaDS/projetosenai.git).
+7. **Comércio Online** — Java, Android Studio e Firebase. [GitHub](https://github.com/IcaroSenaDev/ComercioOnlineDS.git).
+8. **Landing Page** — VS Code, HTML, CSS, JavaScript e jQuery. [GitHub](https://github.com/IcaroSenaDev/projeto-landingpage.git).
+9. **Bitwave** — VS Code, React, Prisma, MongoDB e Node.js. [GitHub](https://github.com/OsManoDaDS/bitwave.git).
+10. **Bitwave — Tomada Inteligente** — VS Code, React, Prisma, MongoDB e Node.js. [GitHub](https://github.com/Tomada-Inteligente/dashboard-tomada.git).
 
-- **Navegação responsiva** com menu dedicado para dispositivos móveis
-- **Destaque automático da seção ativa** no menu conforme o scroll (Intersection Observer)
-- **Download do currículo em PT ou EN** via modal de seleção de idioma
-- **Paleta de tema centralizada** em variáveis CSS (`:root`) para fácil manutenção
-- **Seções principais:**
-  - `Início` — apresentação e título profissional
-  - `Projetos` — projetos em destaque, incluindo os que estão em desenvolvimento atualmente
-  - `Sobre` — trajetória acadêmica e profissional
+## Estrutura
 
----
-
-## Estrutura de arquivos
-
-```
-Myportfolio/
-├── index.html
-├── README.md
-└── src/
-    ├── styles/
-    │   ├── styles.css      # importa os demais arquivos CSS, paleta de cores (:root) e estilos globais
-    │   ├── header.css      # navbar e menu mobile
-    │   ├── home.css        # seção inicial
-    │   ├── projeto.css     # cards de projetos
-    │   ├── sobre.css       # seção sobre
-    │   ├── footer.css      # rodapé e redes sociais
-    │   └── cv-modal.css    # modal de seleção de idioma do currículo
-    ├── javascript/
-    │   └── script.js       # interatividade (menu mobile, scroll spy, modal do CV)
-    ├── images/
-    │   └── wave.svg         # onda decorativa do rodapé (gradiente azul/ciano)
-    └── cv/
-        ├── Currículo-IcaroBonfimdeSena.pdf   # versão em português
-        └── Icaro_Sena_Resume_EN.pdf           # versão em inglês
+```text
+index.html                 Conteúdo semântico e metadados
+src/styles/                Tema, navegação, início, projetos, trajetória e currículo
+src/javascript/script.js   Interações progressivas
+src/images/                Favicon e onda SVG original preservada
+src/cv/                    PDF atualizado, alias compatível e PDFs anteriores
+scripts/                   Servidor local e cópia de distribuição
+tests/                     Preservação de conteúdo, links e testes de navegador
 ```
 
----
+## Executar e validar
 
-## Paleta de cores
+O site pode ser aberto diretamente pelo `index.html` e continua compatível com GitHub Pages na raiz, inclusive sob `/Myportfolio/`. Node.js 20+ é necessário apenas para os comandos de desenvolvimento:
 
-Definida em `src/styles/styles.css`, dentro de `:root`, para fácil ajuste:
-
-| Variável | Uso |
-|---|---|
-| `--bg-primary` | Fundo principal (quase preto, levemente azulado) |
-| `--bg-secondary` | Fundo de seções alternadas |
-| `--bg-elevated` | Cards e elementos elevados (modal, project-card) |
-| `--accent` | Azul/ciano de destaque (links ativos, ícones, botões) |
-| `--text-primary` / `--text-secondary` | Hierarquia de texto |
-
----
-
-## Como executar localmente
-
-```bash
-git clone https://github.com/IcaroSenaDev/Myportfolio.git
-cd Myportfolio
+```sh
+npm ci
+npm start
+npm test
+npm run build
+npx playwright install chromium
+npm run test:browser
 ```
 
-Em seguida, abra o `index.html` diretamente no navegador, ou use uma extensão como **Live Server** (VS Code) para servir o projeto localmente com recarregamento automático.
+O servidor usa `http://127.0.0.1:4173`. `npm run build` copia a versão estática para `dist/`. Para testar essa distribuição, defina `SERVE_DIST=1`. Para usar um navegador já instalado, defina `BROWSER_CHANNEL=msedge` ou `chrome` antes dos testes. No PowerShell: `$env:BROWSER_CHANNEL='msedge'`.
 
----
+Os testes de preservação comparam descrições, links e hashes dos PDFs originais com uma referência do commit `7ba5bc6`. Os testes de navegador cobrem filtros, downloads, teclado/modal, menu móvel, 320/390/768/1024/1920 pixels, movimento reduzido, ausência de JavaScript e verificações axe-core WCAG A/AA. Capturas e resultados locais são gravados em `test-results/` (ignorado pelo Git). A análise automatizada não substitui uma avaliação manual completa de acessibilidade.
 
-## Projetos em destaque
-
-### Em desenvolvimento
-
-- **CFSB** — Sistema profissional de gestão de estoque de segurança para equipamentos críticos. Em construção com Python e Flask.
-- **Mova IA** — Agência de automação com IA voltada para pequenos negócios locais (barbearias e salões de beleza) em Salvador.
-
-### Concluídos
-
-- **[TCC — Central de Monitoramento IoT](https://lnkd.in/dmbFNsdH)** — Coleta de dados de sensores via ESP32 e módulo NRF24L01, envio em tempo real para banco de dados em nuvem (Supabase) e visualização em dashboard com React.js.
-- **[Sistema de Gestão de Estoque (Java)](https://github.com/OsManoDaDS/projetosenai.git)** — Interface gráfica para gerenciamento de estoque, com NetBeans e MySQL.
-- **[Comércio Online (Android Studio & Firebase)](https://github.com/IcaroSenaDev/ComercioOnlineDS.git)** — Aplicativo de e-commerce integrado com Firebase.
-- **[Landing Page (HTML, CSS, JS)](https://github.com/IcaroSenaDev/projeto-landingpage.git)** — Página inicial responsiva com interação via jQuery.
-- **[Bitwave](https://github.com/OsManoDaDS/bitwave.git)** — Aplicação com React, Prisma, MongoDB e Node.js.
-- **[Bitwave — Tomada Inteligente](https://github.com/Tomada-Inteligente/dashboard-tomada.git)** — Dashboard de IoT com React, Prisma, MongoDB e Node.js.
-
----
+Formatação: `npx prettier --write index.html "src/**/*.{css,js}" "scripts/*.cjs" "tests/*.cjs"`.
 
 ## Contato
 
-- **WhatsApp:** [Clique aqui](https://wa.me/5571992546793)
+- **E-mail:** [icarobonfimdesena5@gmail.com](mailto:icarobonfimdesena5@gmail.com)
+- **WhatsApp:** [(71) 99254-6793](https://wa.me/5571992546793)
 - **LinkedIn:** [Icaro Bonfim de Sena](https://www.linkedin.com/in/icaro-bonfim-de-sena)
 - **GitHub:** [IcaroSenaDev](https://github.com/IcaroSenaDev)
-
----
 
 ## Licença
 

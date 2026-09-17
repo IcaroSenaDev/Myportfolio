@@ -1,0 +1,20 @@
+{
+  "name": "icaro-sena-portfolio",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Portfólio estático de Icaro Sena",
+  "scripts": {
+    "start": "node scripts/serve.cjs",
+    "build": "node scripts/build.cjs",
+    "test": "node --test tests/content.test.cjs",
+    "test:browser": "node --test tests/browser.test.cjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "axe-core": "^4.13.0",
+    "playwright": "^1.63.0",
+    "prettier": "3.9.8"
+  }
+}

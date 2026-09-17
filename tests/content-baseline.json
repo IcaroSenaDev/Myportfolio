@@ -1,0 +1,39 @@
+{
+  "sourceCommit": "7ba5bc6",
+  "descriptions": [
+    "Sistema profissional de gestão de estoque de segurança para equipamentos críticos.",
+    "Agência de automação com IA voltada para pequenos negócios locais (barbearias e salões de beleza).",
+    "Bella Massa — Landing page fictícia para pizzaria de bairro, com cardápio, pedido via WhatsApp e identidade visual artesanal.",
+    "Studio Belà — Landing page fictícia para salão de beleza, com serviços, galeria de trabalhos, equipe e agendamento via WhatsApp.",
+    "TCC: Central de monitoramento IoT com ESP32 — coleta de sensores via NRF24L01, envio via Wi-Fi para banco em nuvem e dashboard em tempo real.",
+    "Projeto em Java: Sistema de Gestão de Estoque com Interface Gráfica.",
+    "Projeto Android Studio & Firebase: Comércio Online Java",
+    "Projeto Landing Page",
+    "Projeto Bitwave",
+    "Projeto Bitwave Tomada Inteligente"
+  ],
+  "links": [
+    "#home",
+    "#projeto",
+    "#sobre",
+    "https://canva.link/24onia2aqkxjznm",
+    "https://github.com/IcaroSenaDev",
+    "https://github.com/IcaroSenaDev/ComercioOnlineDS.git",
+    "https://github.com/IcaroSenaDev/Pizzaria",
+    "https://github.com/IcaroSenaDev/projeto-landingpage.git",
+    "https://github.com/IcaroSenaDev/studio",
+    "https://github.com/OsManoDaDS/bitwave.git",
+    "https://github.com/OsManoDaDS/projetosenai.git",
+    "https://github.com/Tomada-Inteligente/dashboard-tomada.git",
+    "https://icarosenadev.github.io/Pizzaria/",
+    "https://icarosenadev.github.io/studio/",
+    "https://wa.me/5571992546793",
+    "https://www.linkedin.com/in/icaro-bonfim-de-sena",
+    "src/cv/Currículo-IcaroBonfimdeSena.pdf",
+    "src/cv/Icaro_Sena_Resume_EN.pdf"
+  ],
+  "pdfHashes": {
+    "src/cv/Icaro_Sena_Resume_EN.pdf": "cf9401f660177dc3c1781c1f0e809983ef518ac07020376e00adb2b3cf0aa895",
+    "src/cv/curriculo_icaro_suporte_ti.pdf": "82ba6c96dcfbd5b160a04bf93fae91fe2d7df9a85fc55b778aecb54c5556e38f"
+  }
+}
