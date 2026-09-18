@@ -1,7 +1,5 @@
 # Icaro Sena — Portfólio
 
-Portfólio de Icaro Bonfim de Sena, com identidade em **preto e azul-escuro**, tipografia editorial e uma composição 3D interativa. HTML, CSS e JavaScript nativos; nenhuma dependência de execução ou CDN.
-
 **Endereço do portfólio:** [icarosenadev.github.io/Myportfolio](https://icarosenadev.github.io/Myportfolio)
 
 ## Sobre
